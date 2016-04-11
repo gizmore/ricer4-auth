@@ -1,0 +1,32 @@
+en:
+  ricer4:
+    extender:
+      forces_authentication:
+        err_authenticate: "You have to authenticate before you can use this function."
+        
+    plugins:
+      auth:
+
+        err_wrong_password: 'Your submitted password is wrong.'
+
+        login:
+          trigger: 'login'
+          description: 'Authenticates you with $BOT$.'
+          err_already_authenticated: 'You are already authenticated. Maybe by Autologin?'
+          msg_authenticated: 'Welcome back, you are now authenticated.'
+
+        logout:
+          description: 'Logs you out.'
+          msg_logged_out: 'You are now logged out.'
+
+        register:
+          trigger: 'register'
+          description: 'Register yourself with $BOT$ or change your password.'
+          err_already_registered: 'You are already registered. Use "$T$$CMD$ <new_password> <old_password>" to change your password.'
+          msg_registered: 'You are now registered and authenticated.'
+          msg_changed_pass: 'Your password has been changed and you are now authenticated.'
+
+        super:
+          trigger: 'super'
+          description: 'Elevates your permissions serverwide.'
+          msg_elevated: 'Your permissions on this server and all known channels have been lifted to %{permission}.'
