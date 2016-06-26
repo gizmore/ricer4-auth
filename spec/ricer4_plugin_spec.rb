@@ -11,7 +11,7 @@ describe Ricer4::Plugins::Auth do
   ActiveRecord::Magic::Update.run
 
   it("works") do
-
+    bot.exec_line_for('Auth/Login', 'wrongpassword')
   end
   
 end

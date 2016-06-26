@@ -8,7 +8,6 @@ module Ricer4::Plugins::Auth
     def execute
       user.logout!
       rply :msg_logged_out
-      arm_publish('user/signed/out', sender)
     end
   
   end
